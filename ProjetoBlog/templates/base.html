@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>{% block 'titulo' %}{% endblock %} - Projeto Blog</title>
+    <!--_heading.html-->
+    {% include 'partial/_heading.html' %}
+    <!--_heading.html-->
+
+</head>
+
+<body>
+    <!--nav.html-->
+    {% include 'partial/_nav.html' %}
+    <!--nav.html-->
+
+
+    <!-- Page Content -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% block 'conteudo' %} {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+
+    <!--_footer.html-->
+    {% include 'partial/_footer.html' %}
+    <!--/_footer.html-->
+
+
+
+</body>
+
+</html>
